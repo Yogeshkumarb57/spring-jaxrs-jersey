@@ -21,7 +21,7 @@ public class ExceptionHandler implements ExceptionMapper<Throwable> {
         return response;
     }
 
-    //you can write your custom handling code
+    //add your custom handling code
     private Response handleException(Exception ex) {
         ex.printStackTrace();
         return Response.serverError().entity(ex.getMessage()).build();
