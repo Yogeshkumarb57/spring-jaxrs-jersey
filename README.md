@@ -37,7 +37,7 @@ Hit the following urls
 
 	Swagger ui files added separately from "https://github.com/swagger-api/swagger-ui/tree/master/dist" into directory "/src/main/resources/static"
 	
-<b>Update SwaggerUIBundle.url to swagger json url</b>
+<b>Update SwaggerUIBundle({url: ${swagge_json_url} ...}) to swagger json url</b>
 
 SwaggerUIBundle({
         url: location.protocol + "//" + location.hostname + (location.port && ":" + location.port)+ "/rest/swagger.json",
