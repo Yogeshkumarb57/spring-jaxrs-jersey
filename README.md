@@ -1,15 +1,37 @@
 # REST APIs using JAX-RS, Spring Boot, Jersey + Swagger Documentation
 JAX-RS REST APIs using spring boot, jersey as implementation, swagger for documentation
 
-
-
 <h3>Required Dependencies :</h3>
 
---> org.springframework.boot:spring-boot-starter-jersey  --- provides all required dependencies for developing rest apis from JAX-RS specification.
+	...
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.19.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	....
+	<dependencies>
+		<!-- provides all required dependencies for developing rest apis from JAX-RS -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jersey</artifactId>
+		</dependency>
 
---> org.glassfish.jersey.media:jersey-media-json-jackson --- added for object to json conversion
+		<!-- for object to json conversion -->
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>2.25</version>
+		</dependency>
 
---> io.swagger:swagger-jersey2-jaxrs --- for swagger annotations, classes
+		<!-- swagger annotations -->
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jersey2-jaxrs</artifactId>
+			<version>1.5.20</version>
+		</dependency>
+	</dependencies>
 
 
 <h3>Run Application :</h3>
